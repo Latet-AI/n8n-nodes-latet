@@ -1,0 +1,21 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    groups:
+      minor-and-patch:
+        update-types: ["minor", "patch"]
+    ignore:
+      # eslint-plugin-n8n-nodes-base, which @n8n/node-cli's lint runs, does not work with eslint 10
+      - dependency-name: "eslint"
+        update-types: ["version-update:semver-major"]
+      # n8n's node template and its tools stay on TypeScript 5
+      - dependency-name: "typescript"
+        update-types: ["version-update:semver-major"]
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
