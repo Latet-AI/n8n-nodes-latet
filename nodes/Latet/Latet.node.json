@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-latet.latet",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development", "Utility"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://docs.latet.ai/reference/apps-api/#authentication"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://github.com/Latet-AI/n8n-nodes-latet#readme"
+			}
+		]
+	}
+}

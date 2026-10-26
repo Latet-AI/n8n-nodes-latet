@@ -1,0 +1,56 @@
+{
+	"name": "n8n-nodes-latet",
+	"version": "0.1.0",
+	"description": "n8n nodes for the applications API of a Latet server: find, mask, restore and forget personal data and secrets in the texts of a workflow",
+	"license": "MIT",
+	"homepage": "https://latet.ai",
+	"keywords": [
+		"n8n-community-node-package",
+		"latet",
+		"privacy",
+		"pii",
+		"masking",
+		"pseudonymization"
+	],
+	"author": {
+		"name": "Latet",
+		"url": "https://latet.ai"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Latet-AI/n8n-nodes-latet.git"
+	},
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease",
+		"test": "n8n-node build && node --test test/*.test.js"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"strict": true,
+		"credentials": [
+			"dist/credentials/LatetApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/Latet/Latet.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"eslint": "9.29.0",
+		"prettier": "3.8.3",
+		"release-it": "20.2.0",
+		"typescript": "5.9.3"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
