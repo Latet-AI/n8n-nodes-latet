@@ -8,6 +8,11 @@ unmask what comes back.
 It needs a Latet server with the applications API (Latet 0.10.0 or later) and an API key's token. A person's
 computer token is refused.
 
+Documentation: [n8n](https://docs.latet.ai/applications/n8n/) and [the applications API](https://docs.latet.ai/applications/)
+in Latet's documentation, also in [Italiano](https://docs.latet.ai/it/applications/n8n/),
+[Deutsch](https://docs.latet.ai/de/applications/n8n/), [Français](https://docs.latet.ai/fr/applications/n8n/) and
+[Español](https://docs.latet.ai/es/applications/n8n/).
+
 - [Installation](#installation)
 - [Credentials](#credentials)
 - [Operations](#operations)
